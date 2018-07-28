@@ -15,9 +15,9 @@
 baseURL = "/"
 languageCode = "en-us"
 defaultContentLanguage = "en-us"
-title = "Hugo tranquilpeak theme"
+title = "Minh Pham's space"
 theme = "hugo-tranquilpeak-theme"
-disqusShortname = "hugo-tranquilpeak-theme"
+disqusShortname = "minhpham-blog"
 # googleAnalytics = "UA-123-45"
 paginate = 7
 canonifyurls = true
@@ -31,15 +31,15 @@ canonifyurls = true
   archive = "archives"
 
 [author]
-  name = "Firstname Lastname"
-  bio = "Super bio with markdown support **COOL**"
-  job = "Your job title"
-  location = "France"
+  name = "Minh Pham"
+  bio = "A typical software developer who loves working with new stuff **COOL**"
+  job = "Software Engineer"
+  location = "USA"
   # Your Gravatar email. Overwrite `author.picture` everywhere in the blog
-  gravatarEmail = "thibaud.lepretre@gmail.com"
+  gravatarEmail = "pnminh232@gmail.com"
   # Your profile picture
   # Overwritten by your gravatar image if `author.gravatarEmail` is filled
-  picture = "https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png"
+  picture = "images/avatar.png"
   # Your Twitter username without the @. E.g : thibaudlepretre
   # twitter = "thibaudlepretre"
   # Your google plus profile id. E.g : +ThibaudLepretre or 114625208755123718311
@@ -52,6 +52,12 @@ canonifyurls = true
   name = "Home"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-home\"></i>"
   url = "/"
+[[menu.main]]
+  weight = 3
+  identifier = "blogs"
+  name = "Blog"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-pencil\"></i>"
+  url = "/categories/blog"
 [[menu.main]]
   weight = 2
   identifier = "categories"
@@ -82,20 +88,14 @@ canonifyurls = true
   identifier = "github"
   name = "GitHub"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-github\"></i>"
-  url = "https://github.com/kakawait"
-[[menu.links]]
-  weight = 2
-  identifier = "stackoverflow"
-  name = "Stack Overflow"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-stack-overflow\"></i>"
-  url = "https://stackoverflow.com/users/636472/kakawait"
+  url = "https://github.com/pnminh"
 
-[[menu.misc]]
+[[menu.links]]
   weight = 1
-  identifier = "rss"
-  name = "RSS"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-rss\"></i>"
-  url = "/index.xml"
+  identifier = "linkedin"
+  name = "LinkedIn"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-linkedin\"></i>"
+  url = "https://www.linkedin.com/in/minhpham0223/"
 
 [params]
   # Customize date format use to render blog post date, categories and other
@@ -118,7 +118,7 @@ canonifyurls = true
   # If false it will flat categories.
   hierarchicalCategories = true
 
-  description = "Hugo tranquilpeak theme demo"
+  description = "Minh Pham's virtual home"
 
   # Customization
   # Define the behavior of the sidebar
