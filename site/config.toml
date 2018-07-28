@@ -32,7 +32,7 @@ canonifyurls = true
 
 [author]
   name = "Minh Pham"
-  bio = "A typical software developer who loves working with new stuff **COOL**"
+  bio = "A typical software developer who loves working with new stuff"
   job = "Software Engineer"
   location = "USA"
   # Your Gravatar email. Overwrite `author.picture` everywhere in the blog
@@ -47,16 +47,16 @@ canonifyurls = true
 
 # Menu Configuration
 [[menu.main]]
+  weight = 4
+  identifier = "all"
+  name = "All Posts"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-list\"></i>"
+  url = "/"
+[[menu.main]]
   weight = 1
   identifier = "home"
   name = "Home"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-home\"></i>"
-  url = "/"
-[[menu.main]]
-  weight = 3
-  identifier = "blogs"
-  name = "Blog"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-pencil\"></i>"
   url = "/categories/blog"
 [[menu.main]]
   weight = 2

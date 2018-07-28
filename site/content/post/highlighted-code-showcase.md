@@ -2,8 +2,7 @@
 title: "highlighted code showcase"
 date: 2015-03-23
 categories:
-  - tranquilpeak
-  - features
+  - theme-features
 tags:
   - highlight code
   - github theme
