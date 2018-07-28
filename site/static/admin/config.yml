@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-
+  repo: pnminh/victor-hugo-tranquilpeak
 media_folder: "site/static/img" # Folder where user uploaded files should go
 public_folder: "img"
 
