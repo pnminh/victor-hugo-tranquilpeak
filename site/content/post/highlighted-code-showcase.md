@@ -1,14 +1,16 @@
 ---
-title: "highlighted code showcase"
-date: 2015-03-23
-categories:
-  - theme-features
+title: Code snippets
+thumbnailImage: //d1u9biwaxjngwg.cloudfront.net/highlighted-code-showcase/peak-140.jpg
+thumbnailImagePosition: left
+metaAlignment: center
+date: 2015-03-23T00:00:00.000Z
+description: Some code snippets that can be added to the page
 tags:
   - highlight code
   - github theme
   - test
-thumbnailImagePosition: left
-thumbnailImage: //d1u9biwaxjngwg.cloudfront.net/highlighted-code-showcase/peak-140.jpg
+categories:
+  - theme-features
 ---
 
 Tranquilpeak Hugo theme have its own theme to highlight source code. It's based on GitHub theme: simple and elegant. Check out how it sublimate source codes.
