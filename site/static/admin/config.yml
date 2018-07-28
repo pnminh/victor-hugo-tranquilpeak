@@ -1,0 +1,24 @@
+backend:
+  name: git-gateway
+
+media_folder: "site/static/img" # Folder where user uploaded files should go
+public_folder: "img"
+
+collections: # A list of collections the CMS should be able to edit
+  - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Post" # Used in the UI, ie.: "New Post"
+    folder: "site/content/post" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Thumbnail Image", name: "thumbnailImage", widget: "image", default: "//d1u9biwaxjngwg.cloudfront.net/cover-image-showcase/city-750.jpg",required: false}
+      - {label: "Thumbnail Image Position", name: "thumbnailImagePosition", widget: "select",options: ["left", "center", "right"], required: false, default: "left"}
+      - {label: "Cover Image", name: "coverImage", widget: "image", default: "//d1u9biwaxjngwg.cloudfront.net/cover-image-showcase/city.jpg", required: false}    
+      - {label: "Meta alignment", name: "metaAlignment", widget: "select",options: ["left", "center", "right"], default: "left"}
+      - {label: "Cover Meta", name: "coverMeta", widget: "select",options: ["in", "out"], required: false, default: "in"}    
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Description", name: "description", widget: "text", required: false}
+      - {label: "Image", name: "image", widget: "image", required: false}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
+      - {label: "Categories", name: "categories", widget: "list", required: false, default: ["blog"]}
+      - {label: "Body", name: "body", widget: "markdown"}
