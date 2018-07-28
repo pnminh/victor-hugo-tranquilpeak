@@ -3,8 +3,8 @@ title: My first post
 thumbnailImage: //d1u9biwaxjngwg.cloudfront.net/cover-image-showcase/city-750.jpg
 thumbnailImagePosition: left
 coverImage: //d1u9biwaxjngwg.cloudfront.net/cover-image-showcase/city.jpg
-metaAlignment: left
-coverMeta: in
+metaAlignment: center
+coverMeta: out
 date: '2018-07-28T00:00:00-05:00'
 tags:
   - blog
