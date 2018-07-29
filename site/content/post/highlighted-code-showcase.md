@@ -1,6 +1,6 @@
 ---
 title: Code snippets
-thumbnailImage: ''
+thumbnailImage: /img/code_snippet_icon.png
 thumbnailImagePosition: left
 coverImage: /img/pexels-photo-52599.jpeg
 metaAlignment: center
