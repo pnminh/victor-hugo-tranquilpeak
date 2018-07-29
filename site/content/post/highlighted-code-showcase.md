@@ -1,7 +1,8 @@
 ---
 title: Code snippets
-thumbnailImage: /img/pexels-photo-52599.jpeg
+thumbnailImage: ''
 thumbnailImagePosition: left
+coverImage: /img/pexels-photo-52599.jpeg
 metaAlignment: center
 coverMeta: out
 date: '2018-07-28T19:05:00-05:00'
