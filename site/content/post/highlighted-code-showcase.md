@@ -2,7 +2,7 @@
 title: Code snippets
 thumbnailImage: /img/code_snippet_icon.png
 thumbnailImagePosition: left
-coverImage: /img/pexels-photo-52599.jpeg
+coverImage: /img/languages.jpg
 metaAlignment: center
 coverMeta: out
 date: '2018-07-28T19:05:00-05:00'
