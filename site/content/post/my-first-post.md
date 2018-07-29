@@ -1,8 +1,8 @@
 ---
 title: My first post
-thumbnailImage: //d1u9biwaxjngwg.cloudfront.net/cover-image-showcase/city-750.jpg
+thumbnailImage: /img/pexels-photo-52599.jpeg
 thumbnailImagePosition: left
-coverImage: //d1u9biwaxjngwg.cloudfront.net/cover-image-showcase/city.jpg
+coverImage: /img/pexels-photo-52599.jpeg
 metaAlignment: center
 coverMeta: out
 date: '2018-07-28T00:00:00-05:00'
