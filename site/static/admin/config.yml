@@ -1,5 +1,5 @@
 backend:
-  name: gitlab
+  name: git-gateway
   repo: pnminh/victor-hugo-tranquilpeak
 # These lines should *not* be indented
 media_folder: "site/static/images/uploads" # Media files will be stored in the repo under static/images/uploads
