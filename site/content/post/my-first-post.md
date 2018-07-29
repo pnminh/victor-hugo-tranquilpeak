@@ -4,7 +4,7 @@ thumbnailImage: /img/pexels-photo-52599.jpeg
 thumbnailImagePosition: left
 coverImage: /img/pexels-photo-52599.jpeg
 metaAlignment: center
-coverMeta: out
+coverMeta: in
 date: '2018-07-28T00:00:00-05:00'
 tags:
   - blog
