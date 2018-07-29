@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   repo: pnminh/victor-hugo-tranquilpeak
 # These lines should *not* be indented
-media_folder: "site/static/images/uploads" # Media files will be stored in the repo under static/images/uploads
+media_folder: "site/themes/hugo-tranquilpeak-theme/static/images/uploads" # Media files will be stored in the repo under static/images/uploads
 public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
 
 collections: # A list of collections the CMS should be able to edit
