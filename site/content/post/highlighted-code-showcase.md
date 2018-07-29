@@ -1,6 +1,6 @@
 ---
 title: Code snippets
-thumbnailImage: //d1u9biwaxjngwg.cloudfront.net/highlighted-code-showcase/peak-140.jpg
+thumbnailImage: /img/pexels-photo-52599.jpeg
 thumbnailImagePosition: left
 metaAlignment: center
 coverMeta: out
