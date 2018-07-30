@@ -4,7 +4,7 @@ thumbnailImage: /images/uploads/pexels-photo-52599.jpeg
 thumbnailImagePosition: left
 coverImage: /images/uploads/pexels-photo-52599.jpeg
 metaAlignment: center
-coverMeta: out
+coverMeta: in
 date: 2018-07-29T04:11:57.933Z
 description: My 2nd post
 tags:
