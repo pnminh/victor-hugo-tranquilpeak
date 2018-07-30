@@ -1,8 +1,8 @@
 ---
 title: Code snippets
-thumbnailImage: /images/code_snippet_icon.png
+thumbnailImage: /images/uploads/code_snippet_icon.png
 thumbnailImagePosition: left
-coverImage: /images/languages.jpg
+coverImage: /images/uploads/languages.jpg
 metaAlignment: center
 coverMeta: out
 date: '2018-07-28T19:05:00-05:00'
