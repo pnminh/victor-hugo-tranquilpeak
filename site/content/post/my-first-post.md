@@ -1,8 +1,8 @@
 ---
 title: My first post
-thumbnailImage: /images/pexels-photo-52599.jpeg
+thumbnailImage: /images/uploads/pexels-photo-52599.jpeg
 thumbnailImagePosition: left
-coverImage: /images/pexels-photo-52599.jpeg
+coverImage: /images/uploads/pexels-photo-52599.jpeg
 metaAlignment: center
 coverMeta: in
 date: '2018-07-28T00:00:00-05:00'
