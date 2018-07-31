@@ -10,7 +10,7 @@ description: 'Tạo blog miễn phí với Netlify, Hugo, và GitHub'
 tags:
   - tutorial
 categories:
-  - thủ thuật
+  - thu thuat
   - tutorials
 ---
 Trong phần này, mình sẽ hướng dẫn các bạn tạo 1 trang blog cá nhân với đầy đủ tính năng và hoàn toàn miễn phí. Sau khi hoàn thành tất cả các bước dưới , các bạn sẽ có thể tạo cho mình 1 trang web của riêng mình để viết blog, hoặc phục vụ những mục đích khác như giao bán hàng hoặc giới thiệu sản phẩm trên mạng.
