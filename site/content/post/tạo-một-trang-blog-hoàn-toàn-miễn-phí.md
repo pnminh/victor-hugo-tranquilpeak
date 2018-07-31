@@ -24,4 +24,4 @@ Trong phần này, mình sẽ hướng dẫn các bạn tạo 1 trang blog cá n
 Mở trình duyệt và vào trang github.com, nhấp vào mục sign up để đăng ký.
 ![](/images/uploads/github1.png)2. Tạo nơi lưu dữ liệu
 
-3. Kết nối tài khoản với máy tính cá
+3. Kết nối tài khoản với máy tính cá nhân
