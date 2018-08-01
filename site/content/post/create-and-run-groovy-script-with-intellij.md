@@ -97,7 +97,22 @@ As Jenkins supports ephemeral docker containers, to run a language-specific scri
 FROM groovy:2.4.15-jdk8-alpine
 COPY grapeConfig.xml /home/groovy/.groovy/grapeConfig.xml
 {{< /codeblock >}}
-{{< codeblock "Dockerfile" "bash">}}
-FROM groovy:2.4.15-jdk8-alpine
-COPY grapeConfig.xml /home/groovy/.groovy/grapeConfig.xml
+{{< codeblock "grapeConfig.xml" "html">}}
+<?xml version="1.0"?>
+<ivysettings>
+  <settings defaultResolver="downloadGrapes"/>
+  <resolvers>
+    <chain name="downloadGrapes" returnFirst="true">
+      <filesystem name="cachedGrapes">
+        <ivy pattern="${user.home}/.groovy/grapes/[organisation]/[module]/ivy-[revision].xml"/>
+        <artifact pattern="${user.home}/.groovy/grapes/[organisation]/[module]/[type]s/[artifact]-[revision](-[classifier]).[ext]"/>
+      </filesystem>
+      <ibiblio name="localm2" root="file:${user.home}/.m2/repository/" checkmodified="true" changingPattern=".*" changingMatcher="regexp" m2compatible="true"/>
+      <!-- todo add 'endorsed groovy extensions' resolver here -->
+      <ibiblio name="dice-repo" root="http://artifactory.services.dicedev.dhiaws.com/artifactory/jcenter/" m2compatible="true"/>
+      <ibiblio name="jcenter" root="https://jcenter.bintray.com/" m2compatible="true"/>
+      <ibiblio name="ibiblio" m2compatible="true"/>
+    </chain>
+  </resolvers>
+</ivysettings>
 {{< /codeblock >}}
