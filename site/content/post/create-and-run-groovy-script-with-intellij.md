@@ -92,7 +92,7 @@ String s = getSecret(args\[0],args\[1])
 print s
 {{< /codeblock >}}
 The good thing about Groovy is to download dependencies we just need to add the @Grab annotation and Groovy runtime will look for and download them for us automatically from the preset repositories such as m2. Later in this post we will see how to setup the download sites. 
-As Jenkins supports ephemeral docker containers, to run a language-specific script we can grab the image from Docker Hub or any docker repositories, or build the image on the fly with the provided Dockerfile. Here is an example of using a Dockerfile to create an inline image and then use it to start a container inside Jenkins pipeline and run the Groovy script
+As Jenkins supports ephemeral docker containers, to run a language-specific script we can grab the image from Docker Hub or any docker repositories, or build the image on the fly with the provided Dockerfile. Here is an example of using a Dockerfile to create a custom inline image and then use it to start a container inside Jenkins pipeline and run the Groovy script
 {{< codeblock "Dockerfile" "bash">}}
 FROM groovy:2.4.15-jdk8-alpine
 COPY grapeConfig.xml /home/groovy/.groovy/grapeConfig.xml
@@ -109,10 +109,21 @@ COPY grapeConfig.xml /home/groovy/.groovy/grapeConfig.xml
       </filesystem>
       <ibiblio name="localm2" root="file:${user.home}/.m2/repository/" checkmodified="true" changingPattern=".*" changingMatcher="regexp" m2compatible="true"/>
       <!-- todo add 'endorsed groovy extensions' resolver here -->
-      <ibiblio name="dice-repo" root="http://artifactory.services.dicedev.dhiaws.com/artifactory/jcenter/" m2compatible="true"/>
+      <ibiblio name="company-repo" root="http://artifactory.services.company.com/artifactory/jcenter/" m2compatible="true"/>
       <ibiblio name="jcenter" root="https://jcenter.bintray.com/" m2compatible="true"/>
       <ibiblio name="ibiblio" m2compatible="true"/>
     </chain>
   </resolvers>
 </ivysettings>
 {{< /codeblock >}}
+{{< codeblock "ManagerSecretRetriever.groovy.java" "java">}}
+...
+//dockerPath: path that contain Dockerfile
+dockerPath.inside{
+        print "run groovy script"
+        return sh(
+                script: "groovy ${groovyScript} ${inputArgs.join(" ")}",
+                returnStdout: true).trim()
+...
+{{< /codeblock >}}
+The Dockerfile tells docker to get the groovy image from Docker Hub, and also copies over the grapeConfig.xml to the image. The grapeConfig.xml configures the sites where Groovy can go and "grab" dependencies. The runtime can first look for the local caches (.groovy/grapes and .m2/repository) to find the dependencies, and if they are not found there, the company  and then jcenter repos will be checked next. The Jenkins pipeline then can start the groovy container and run the script and get back the String response.
