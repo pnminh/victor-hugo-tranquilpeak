@@ -49,33 +49,33 @@ String getSecret(region,secretName) {
 
     ByteBuffer binarySecretData;
 
-\    GetSecretValueRequest getSecretValueRequest = new GetSecretValueRequest();
+    GetSecretValueRequest getSecretValueRequest = new GetSecretValueRequest();
 
-\    getSecretValueRequest.setSecretId(secretName);
+    getSecretValueRequest.setSecretId(secretName);
 
-\    GetSecretValueResult getSecretValueResponse = client.getSecretValue(getSecretValueRequest);
+    GetSecretValueResult getSecretValueResponse = client.getSecretValue(getSecretValueRequest);
 
-\    if(getSecretValueResponse == null) {
+    if(getSecretValueResponse == null) {
 
-\    return null
+    return null
 
-\    }
+    }
 
 
 
-\    if(getSecretValueResponse.getSecretString() != null) {
+    if(getSecretValueResponse.getSecretString() != null) {
 
-\    return getSecretValueResponse.getSecretString()
+    return getSecretValueResponse.getSecretString()
 
-\    }
+    }
 
-\    else {
+    else {
 
-\    binarySecretData = getSecretValueResponse.getSecretBinary();
+    binarySecretData = getSecretValueResponse.getSecretBinary();
 
-\    return new String( binarySecretData.array(), Charset.forName("UTF-8") )
+    return new String( binarySecretData.array(), Charset.forName("UTF-8") )
 
-\    }
+    }
 
 }
 
