@@ -16,9 +16,14 @@ categories:
 ---
 We use Jenkins to run out CI/CD pipeline. The process requires some custom extensions to the existing capability of Jenkins, such as a way to get
 
-{{< codeblock "archives.java" "java">}}
+{{< codeblock "ManagerSecretRetriever.groovy.java" "java">}}
 @Grab('com.amazonaws:aws-java-sdk-secretsmanager:1.11.358')
-
+/**
+ *
+ * @param region
+ * @param secretName
+ * @return secret data as json string
+ */
 import com.amazonaws.client.builder.AwsClientBuilder
 
 import com.amazonaws.services.secretsmanager.AWSSecretsManager
