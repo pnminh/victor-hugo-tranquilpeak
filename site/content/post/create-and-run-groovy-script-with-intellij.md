@@ -15,3 +15,99 @@ categories:
   - blog
 ---
 We use Jenkins to run out CI/CD pipeline. The process requires some custom extensions to the existing capability of Jenkins, such as a way to get
+
+
+
+{{< codeblock "archives.java" "java">}}
+@Grab('com.amazonaws:aws-java-sdk-secretsmanager:1.11.358')
+
+import com.amazonaws.client.builder.AwsClientBuilder
+
+import com.amazonaws.services.secretsmanager.AWSSecretsManager
+
+import com.amazonaws.services.secretsmanager.AWSSecretsManagerClientBuilder
+
+import com.amazonaws.services.secretsmanager.model.GetSecretValueRequest
+
+import com.amazonaws.services.secretsmanager.model.GetSecretValueResult
+
+
+
+import java.nio.ByteBuffer
+
+import java.nio.charset.Charset
+
+
+
+/\*\*
+
+\*
+
+\* @param region
+
+\* @param secretName
+
+\* @return secret data as json string
+
+\*/
+
+String getSecret(region,secretName) {
+
+\    String endpoint = "secretsmanager.${region}.amazonaws.com"
+
+\    AwsClientBuilder.EndpointConfiguration config = new AwsClientBuilder.EndpointConfiguration(endpoint, region);
+
+\    AWSSecretsManagerClientBuilder clientBuilder = AWSSecretsManagerClientBuilder.standard();
+
+\    clientBuilder.setEndpointConfiguration(config);
+
+\    AWSSecretsManager client = clientBuilder.build();
+
+
+
+\    ByteBuffer binarySecretData;
+
+\    GetSecretValueRequest getSecretValueRequest = new GetSecretValueRequest();
+
+\    getSecretValueRequest.setSecretId(secretName);
+
+\    GetSecretValueResult getSecretValueResponse = client.getSecretValue(getSecretValueRequest);
+
+\    if(getSecretValueResponse == null) {
+
+\    return null
+
+\    }
+
+
+
+\    // Decrypted secret using the associated KMS CMK
+
+\    // Depending on whether the secret was a string or binary, one of these fields will be populated
+
+\    if(getSecretValueResponse.getSecretString() != null) {
+
+\    return getSecretValueResponse.getSecretString()
+
+\    }
+
+\    else {
+
+\    binarySecretData = getSecretValueResponse.getSecretBinary();
+
+\    return new String( binarySecretData.array(), Charset.forName("UTF-8") )
+
+\    }
+
+}
+
+/\*\*
+
+\* This requires first argument as region and 2nd as secret name
+
+\*/
+
+String s = getSecret(args\[0],args\[1])
+
+print s
+{{< /codeblock >}}
