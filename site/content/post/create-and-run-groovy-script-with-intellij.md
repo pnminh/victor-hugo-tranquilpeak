@@ -91,4 +91,4 @@ String s = getSecret(args\[0],args\[1])
 
 print s
 {{< /codeblock >}}
-As Jenkins supports ephemeral docker containers, to run a language-specific script we just need to get the image from Docker Hub or any docker repositories, or build the image on the fly with the provided Dockerfile. Here is an example of 
+The good thing about Groovy is to download dependencies we just need to add the @Grab annotation and Groovy runtime will look for and download them for us automatically from the preset repositories such as m2. Later in this post we will see how to setup the download sites. As Jenkins supports ephemeral docker containers, to run a language-specific script we just need to get the image from Docker Hub or any docker repositories, or build the image on the fly with the provided Dockerfile. Here is an example of using a Dockerfile to build an inline image and then use it to start a container inside Jenkins pipeline and run the Groovy script
