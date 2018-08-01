@@ -35,19 +35,19 @@ import java.nio.charset.Charset
 
 String getSecret(region,secretName) {
 
-\    String endpoint = "secretsmanager.${region}.amazonaws.com"
+    String endpoint = "secretsmanager.${region}.amazonaws.com"
 
-\    AwsClientBuilder.EndpointConfiguration config = new AwsClientBuilder.EndpointConfiguration(endpoint, region);
+    AwsClientBuilder.EndpointConfiguration config = new AwsClientBuilder.EndpointConfiguration(endpoint, region);
 
-\    AWSSecretsManagerClientBuilder clientBuilder = AWSSecretsManagerClientBuilder.standard();
+    AWSSecretsManagerClientBuilder clientBuilder = AWSSecretsManagerClientBuilder.standard();
 
-\    clientBuilder.setEndpointConfiguration(config);
+    clientBuilder.setEndpointConfiguration(config);
 
-\    AWSSecretsManager client = clientBuilder.build();
+    AWSSecretsManager client = clientBuilder.build();
 
 
 
-\    ByteBuffer binarySecretData;
+    ByteBuffer binarySecretData;
 
 \    GetSecretValueRequest getSecretValueRequest = new GetSecretValueRequest();
 
