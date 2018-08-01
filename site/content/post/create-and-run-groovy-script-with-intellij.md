@@ -4,7 +4,7 @@ thumbnailImage: /images/uploads/groovy-logo.png
 thumbnailImagePosition: left
 coverImage: /images/uploads/groovy-logo.png
 metaAlignment: center
-coverMeta: out
+coverMeta: in
 date: '2018-08-01T14:28:42-05:00'
 description: ' A note on how to create and run Groovy script with Intellij'
 tags:
@@ -14,7 +14,7 @@ tags:
 categories:
   - blog
 ---
-We use Jenkins to run out CI/CD pipeline. The process requires some custom extensions to the existing capability of Jenkins, such as a way to get
+We use Jenkins to run out CI/CD pipeline. The process requires some custom extensions to the existing capability of Jenkins. Below is a Groovy script to get secrets from the AWS SecretManager service.
 
 {{< codeblock "ManagerSecretRetriever.groovy.java" "java">}}
 @Grab('com.amazonaws:aws-java-sdk-secretsmanager:1.11.358')
@@ -91,3 +91,4 @@ String s = getSecret(args\[0],args\[1])
 
 print s
 {{< /codeblock >}}
+As Jenkins supports ephemeral docker containers, to run a language-specific script we just need to get the image from Docker Hub or any docker repositories, or build the image on the fly with the provided Dockerfile. Here is an example of 
