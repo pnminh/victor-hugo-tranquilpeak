@@ -66,7 +66,8 @@ String getSecret(region,secretName) {
 
     }
 
-
+    // Decrypted secret using the associated KMS CMK
+    // Depending on whether the secret was a string or binary, one of these fields will be populated
 
     if(getSecretValueResponse.getSecretString() != null) {
 
@@ -83,7 +84,9 @@ String getSecret(region,secretName) {
     }
 
 }
-
+/**
+ * This requires first argument as region and 2nd as secret name
+ */
 String s = getSecret(args\[0],args\[1])
 
 print s
