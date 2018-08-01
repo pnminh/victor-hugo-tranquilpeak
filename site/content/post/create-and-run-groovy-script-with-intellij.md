@@ -1,5 +1,5 @@
 ---
-title: Create and run groovy script with Intellij
+title: Integrate groovy script in the software development life cycle
 thumbnailImage: /images/uploads/groovy-logo.png
 thumbnailImagePosition: left
 coverImage: /images/uploads/groovy-logo-dark.png
@@ -127,3 +127,6 @@ dockerPath.inside{
 ...
 {{< /codeblock >}}
 The Dockerfile tells docker to get the groovy image from Docker Hub, and also copies over the grapeConfig.xml to the image. The grapeConfig.xml configures the sites where Groovy can go and "grab" dependencies. The runtime can first look for the local caches (.groovy/grapes and .m2/repository) to find the dependencies, and if they are not found there, the company  and then jcenter repos will be checked next. The Jenkins pipeline then can start the groovy container and run the script and get back the String response.
+
+Run Groovy script with IntelliJ
+Running script with Jenkins pipeline takes quite a few steps. What if we want to test the script before checking into source control, such as running it right inside an IDE. At Dice, we use IntelliJ to build Java and Python projects. Having it run the Groovy script on the fly should be a very convenient way as part of the development process. In this section I will show you how to make that happen.
