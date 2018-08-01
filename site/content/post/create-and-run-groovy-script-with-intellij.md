@@ -16,7 +16,7 @@ categories:
 ---
 We use Jenkins to run out CI/CD pipeline. The process requires some custom extensions to the existing capability of Jenkins. Below is a Groovy script to get secrets from the AWS SecretManager service.
 
-{{< codeblock "ManagerSecretRetriever.groovy.java" "java">}}
+{{< codeblock "ManagerSecretRetriever.groovy" "java">}}
 @Grab('com.amazonaws:aws-java-sdk-secretsmanager:1.11.358')
 /**
  *
@@ -116,7 +116,7 @@ COPY grapeConfig.xml /home/groovy/.groovy/grapeConfig.xml
   </resolvers>
 </ivysettings>
 {{< /codeblock >}}
-{{< codeblock "ManagerSecretRetriever.groovy.java" "java">}}
+{{< codeblock "JenkinsSharedLibUtil.groovy" "java">}}
 ...
 //dockerPath: path that contain Dockerfile
 dockerPath.inside{
