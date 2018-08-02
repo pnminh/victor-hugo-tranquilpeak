@@ -18,13 +18,12 @@ We use Jenkins to run out CI/CD pipeline. The process requires some custom exten
 
 {{< codeblock "ManagerSecretRetriever.groovy" "java">}}
 @Grab('com.amazonaws:aws-java-sdk-secretsmanager:1.11.358')
-/\*\*
- *
-
+/**
+*
 * @param region
 * @param secretName
 * @return secret data as json string
-   */
+*/
   import com.amazonaws.client.builder.AwsClientBuilder
 
 import com.amazonaws.services.secretsmanager.AWSSecretsManager
@@ -87,10 +86,9 @@ return new String( binarySecretData.array(), Charset.forName("UTF-8") )
 ```
 
 }
-/\*\*
-
+/**
 * This requires first argument as region and 2nd as secret name
-   */
+*/
   String s = getSecret(args\[0],args\[1])
 
 print s
