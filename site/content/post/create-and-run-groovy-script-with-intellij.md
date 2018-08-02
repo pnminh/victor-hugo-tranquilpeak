@@ -110,8 +110,8 @@ COPY grapeConfig.xml /home/groovy/.groovy/grapeConfig.xml
   <resolvers>
     <chain name="downloadGrapes" returnFirst="true">
       <filesystem name="cachedGrapes">
-        <ivy pattern="${user.home}/.groovy/grapes/\[organisation]/\[module]/ivy-\[revision].xml"/>
-        <artifact pattern="${user.home}/.groovy/grapes/\[organisation]/\[module]/\[type]s/\[artifact]-\[revision](-\[classifier]).\[ext]"/>
+        <ivy pattern="${user.home}/.groovy/grapes/\\[organisation]/\\[module]/ivy-\\[revision].xml"/>
+        <artifact pattern="${user.home}/.groovy/grapes/\\[organisation]/\\[module]/\\[type]s/\\[artifact]-\\[revision](-\\[classifier]).\\[ext]"/>
       </filesystem>
       <ibiblio name="localm2" root="file:${user.home}/.m2/repository/" checkmodified="true" changingPattern=".*" changingMatcher="regexp" m2compatible="true"/>
       <!-- todo add 'endorsed groovy extensions' resolver here -->
@@ -152,6 +152,10 @@ We also need to add Ivy jar as a dependency to the module as IntelliJ will use i
 
 Look for the ivy dependency. In my case since I already have a project with lots of modules, the dependency is already there. You may need to search for ivy using the New Library button if you don't see it in the list.
 
-![add ivy jar to dependency list](/images/uploads/screen-shot-2018-08-01-at-4.43.35-pm.png)
+![add ivy jar to dependency list](/images/uploads/screen-shot-2018-08-01-at-4.44.52-pm.png)
 
-Now we can right click on the module and choose Build.
+Now we can right click on the module and choose Build. This should download all dependencies listed with @Grab. However in some cases dependencies are not resolved, so one trick is to move the cursor at the @Grab annotation, use Alt+ Enter ( or Option + Return in Mac) and select Grab the artifacts. 
+
+![grab the artifacts](/images/uploads/screen-shot-2018-08-01-at-6.53.37-pm.png)
+
+That is it for today.
