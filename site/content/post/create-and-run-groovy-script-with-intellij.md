@@ -40,7 +40,6 @@ import java.nio.charset.Charset
 
 String getSecret(region,secretName) {
 
-```
 String endpoint = "secretsmanager.${region}.amazonaws.com"
 
 AwsClientBuilder.EndpointConfiguration config = new AwsClientBuilder.EndpointConfiguration(endpoint, region);
@@ -83,7 +82,7 @@ binarySecretData = getSecretValueResponse.getSecretBinary();
 return new String( binarySecretData.array(), Charset.forName("UTF-8") )
 
 }
-```
+
 
 }
 /**
