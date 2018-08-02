@@ -1,12 +1,12 @@
 ---
-title: Python Unit Tests
-thumbnailImage: //d1u9biwaxjngwg.cloudfront.net/cover-image-showcase/city-750.jpg
+title: A new journey to Python and its testing paradigm
+thumbnailImage: /images/uploads/python.png
 thumbnailImagePosition: left
-coverImage: //d1u9biwaxjngwg.cloudfront.net/cover-image-showcase/city.jpg
+coverImage: /images/uploads/python-dark.png
 metaAlignment: center
-coverMeta: out
+coverMeta: in
 date: '2018-08-02T09:52:01-05:00'
-description: a new journey to Python and its testing paradigm
+description: A new journey to Python and its testing paradigm
 tags:
   - blog
   - post
