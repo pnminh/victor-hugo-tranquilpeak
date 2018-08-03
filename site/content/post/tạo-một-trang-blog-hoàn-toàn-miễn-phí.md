@@ -19,11 +19,11 @@ Do nội dung khá dài, mình sẽ chia nó làm nhiều phần nhỏ tập tru
 
 **I. Tài khoản GitHub**
 
-Khi bạn mở một trang web bất kỳ, ví dụ như Google.com trên một trình duyệt như Chrome hoặc Firefox, trình duyệt sẽ tải nội dung từ máy chủ của Google. Bạn có thể tưởng tượng máy chủ là 
+Khi bạn mở một trang web bất kỳ, ví dụ như Google.com trên một trình duyệt như Chrome hoặc Firefox, trình duyệt sẽ tải nội dung từ máy chủ của Google. Bạn có thể tưởng tượng máy chủ giống như cửa hàng KFC, còn nội dung mà máy chủ cung cấp là những món combo gà rán mà KFC làm và bán cho bạn. Khi trình duyệt tải website từ máy chủ Google về và hiển thị trên máy tính bàn của bạn, nó tương tự như việc bạn gọi món từ KFC và tiêu thụ. 
 
-Đầu tiên các bạn cần một nơi trên mạng để lưu trữ dữ liệu website, tương tự như việc sử dụng Apple iCloud, Google để chứa hình ảnh, âm thanh, word và pdf. Trong phần này chúng ta sẽ cùng tạo một tài khoản GitHub, vốn là trang web phổ biến trong giới lập trình nhằm mục đích lưu trữ những đoạn mã nguồn (source codes) của những chương trình chạy trên máy tính, điện thoại, hoặc website. Điểm khác biệt giữa GitHub và các sản phẩm lưu trữ cá nhân như Google Drive là khả năng quản  lịch sử của tất cả các trang (documents) lưu trên GitHub. Nếu bạn vô tình xoá nhầm hoặc chỉnh sửa 1 file nào đó mà sau đó muốn phục hồi lại phiên bản gốc thì việc đó hoàn toàn đơn giản và dễ dàng.
+Thông thường mỗi cửa hàng KFC sẽ có một phòng để chứa thịt gà chưa chế biến và gia vị tẩm ướp. Những nguyên liệu thô để tạo 1 trang web cũng cần được lưu ở một nơi nào đó, và đó chính là lúc bạn cần đến GitHub để cất giữ mã nguồn website của mình. Điểm khác biệt giữa GitHub và các sản phẩm lưu trữ cá nhân như Google Drive là khả năng quản  lịch sử của tất cả các trang (documents) lưu trên GitHub. Nếu bạn vô tình xoá nhầm hoặc chỉnh sửa 1 file nào đó mà sau đó muốn phục hồi lại phiên bản gốc thì việc đó hoàn toàn đơn giản và dễ dàng.
 
-1. Đăng ký tài khoản
+1. **Đăng ký tài khoản**
 
 
 ```
