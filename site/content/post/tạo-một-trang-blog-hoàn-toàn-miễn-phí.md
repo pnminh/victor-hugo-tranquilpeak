@@ -25,11 +25,7 @@ Thông thường mỗi cửa hàng KFC sẽ có một phòng để chứa thị
 
 1. **Đăng ký tài khoản**
 
-
-```
 Mở trình duyệt và vào trang github.com, nhấp vào mục sign up để đăng ký.
-```
-
 ![null](/images/uploads/github1.png)
 
 2. Tạo nơi lưu dữ liệu
