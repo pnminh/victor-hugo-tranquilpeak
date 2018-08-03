@@ -45,6 +45,6 @@ Website hướng dẫn cài đặt Git client trên Windows: https://freetuts.ne
 
 Mình không tìm được website hướng dẫn chi tiết cách cài đặt trên Mac bằng tiếng Việt, có lẽ do Macbook không phổ biến tại Việt Nam. Bạn có thể làm theo nội dung thực hiên của trang chủ của Git tại địa chỉ: https://git-scm.com/book/vi/v1/B%E1%BA%AFt-%C4%90%E1%BA%A7u-C%C3%A0i-%C4%90%E1%BA%B7t-Git
 
-Bạn cũng cần cài đặt SSH key. Sử dụng SSH key giúp bạn đăng nhập vào GitHub từ Git client mà không cần đến password tài khoản GitHub. Đối với phần này thì mình phải nói là chịu thua trong việc tìm 1 trang hướng dẫn bằng tiếng Việt. Các bạn chịu khó đọc tiếng Anh nhé. Mình có thể viết 1 blog tiếng Việt về phần này vào 1 thì tương lai gần. 
+Bạn cũng cần cài đặt SSH key. Sử dụng SSH key giúp bạn đăng nhập vào GitHub từ Git client mà không cần đến password tài khoản GitHub. Đối với phần này thì mình phải nói là chịu thua trong việc tìm 1 trang hướng dẫn bằng tiếng Việt. Các bạn chịu khó đọc tiếng Anh nhé. Mình có thể viết 1 blog tiếng Việt về phần này vào 1 thì tương lai gần (hoặc là 1 thì chưa xác định, tuỳ vào mức độ rảnh rỗi :)). 
 Windows: https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/#platform-windows
 Mac: https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/
