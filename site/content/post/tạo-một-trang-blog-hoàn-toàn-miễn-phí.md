@@ -37,5 +37,14 @@ Từ trình duyệt của bạn, mở trang web với đường link https://git
 
 **3. Kết nối tài khoản với máy tính cá nhân**  
 
-Tuỳ vào hệ điều hành mà bạn sử dụng mà cách thiết lập giao tiếp với GitHub sẽ có một chút khác biệt. Mình sẽ hướng dẫn cách cài đặt cho 2 hệ điều hành phổ biến là Windows và Mac.
- 
+Tuỳ vào hệ điều hành mà bạn sử dụng mà cách thiết lập giao tiếp với GitHub sẽ có một chút khác biệt. Mình sẽ không đưa ra chi tiết cách cài đặt tại đây vì nó tương đối dài và đã có rất nhiều trang web hướng dẫn cách cài đặt rồi. Mình xin liệt kê các đường link hữu ích dưới đây.
+
+Đầu tiên bạn cần download git client về máy. Git client giống Facebook Messenger, nhưng thay vì bạn dùng nó để chat với những người sử dụng Facebook Messenger khác, bạn sẽ dùng Git client để chat trực tiếp với tài khoản của bạn trên GitHub, và nội dung của những đoạn chat này chính là những thay đổi mã nguồn website mà bạn upload lên GitHub.
+
+Website hướng dẫn cài đặt Git client trên Windows: https://freetuts.net/cai-dat-git-tren-windows-1063.html
+
+Mình không tìm được website hướng dẫn chi tiết cách cài đặt trên Mac bằng tiếng Việt, có lẽ do Macbook không phổ biến tại Việt Nam. Bạn có thể làm theo nội dung thực hiên của trang chủ của Git tại địa chỉ: https://git-scm.com/book/vi/v1/B%E1%BA%AFt-%C4%90%E1%BA%A7u-C%C3%A0i-%C4%90%E1%BA%B7t-Git
+
+Bạn cũng cần cài đặt SSH key. Sử dụng SSH key giúp bạn đăng nhập vào GitHub từ Git client mà không cần đến password tài khoản GitHub. Đối với phần này thì mình phải nói là chịu thua trong việc tìm 1 trang hướng dẫn bằng tiếng Việt. Các bạn chịu khó đọc tiếng Anh nhé. Mình có thể viết 1 blog tiếng Việt về phần này vào 1 thì tương lai gần. 
+Windows: https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/#platform-windows
+Mac: https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/
