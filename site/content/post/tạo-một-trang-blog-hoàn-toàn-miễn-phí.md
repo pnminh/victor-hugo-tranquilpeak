@@ -25,8 +25,13 @@ Thông thường mỗi cửa hàng KFC sẽ có một phòng để chứa thị
 
 1. **Đăng ký tài khoản**
 
-Mở trình duyệt và vào trang github.com, nhấp vào mục sign up để đăng ký.
+Mở trình duyệt và vào trang github.com, nhấp vào mục sign up để đăng ký một tài khoản trên GitHub.
 ![null](/images/uploads/github1.png)
 
-2. Tạo nơi lưu dữ liệu
+2.  Copy mã nguồn từ 1 tài khoản GitHub khác.
+Một trong những điều tuyệt vời nhất của GitHub là bạn có thể tải/copy rất nhiều mã nguồn mở (open source) từ tài khoản GitHub của những công tuy, cá nhân, hoặc cộng đồng mạng về tài khoản GitHub của bạn và sau đó sửa đổi mã nguồn này theo ý thích của mình. 
+Từ trình duyệt của bạn, mở trang web với đường link https://github.com/netlify-templates/one-click-hugo-cms. Bạn sẽ thấy nút Fork ở phía trên góc phải của màn hình. Click vào đó và GitHub sẽ copy toàn bộ mã nguồn của trang web về tài khoản của bạn.
+
+![Fork a repository](/images/uploads/screen-shot-2018-08-03-at-4.08.53-pm.png)
+
 3. Kết nối tài khoản với máy tính cá nhân
