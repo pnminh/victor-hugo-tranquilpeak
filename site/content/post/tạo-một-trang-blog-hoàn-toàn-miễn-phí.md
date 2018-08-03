@@ -23,12 +23,13 @@ Khi bạn mở một trang web bất kỳ, ví dụ như Google.com trên một 
 
 Thông thường mỗi cửa hàng KFC sẽ có một phòng để chứa thịt gà chưa chế biến và gia vị tẩm ướp. Những nguyên liệu thô để tạo 1 trang web cũng cần được lưu ở một nơi nào đó, và đó chính là lúc bạn cần đến GitHub để cất giữ mã nguồn website của mình. Điểm khác biệt giữa GitHub và các sản phẩm lưu trữ cá nhân như Google Drive là khả năng quản  lịch sử của tất cả các trang (documents) lưu trên GitHub. Nếu bạn vô tình xoá nhầm hoặc chỉnh sửa 1 file nào đó mà sau đó muốn phục hồi lại phiên bản gốc thì việc đó hoàn toàn đơn giản và dễ dàng.
 
-1. **Đăng ký tài khoản**
+**1. Đăng ký tài khoản**
 
 Mở trình duyệt và vào trang github.com, nhấp vào mục sign up để đăng ký một tài khoản trên GitHub.
 ![null](/images/uploads/github1.png)
 
-2.  Copy mã nguồn từ 1 tài khoản GitHub khác.
+**2. Copy mã nguồn từ 1 tài khoản GitHub khác**  
+
 Một trong những điều tuyệt vời nhất của GitHub là bạn có thể tải/copy rất nhiều mã nguồn mở (open source) từ tài khoản GitHub của những công tuy, cá nhân, hoặc cộng đồng mạng về tài khoản GitHub của bạn và sau đó sửa đổi mã nguồn này theo ý thích của mình. 
 Từ trình duyệt của bạn, mở trang web với đường link https://github.com/netlify-templates/one-click-hugo-cms. Bạn sẽ thấy nút Fork ở phía trên góc phải của màn hình. Click vào đó và GitHub sẽ copy toàn bộ mã nguồn của trang web về tài khoản của bạn.
 
