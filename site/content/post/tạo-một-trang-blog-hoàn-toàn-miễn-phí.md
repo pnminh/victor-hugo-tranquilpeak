@@ -17,8 +17,6 @@ Trong series này, mình sẽ hướng dẫn các bạn tạo 1 trang blog cá n
 
 Do nội dung khá dài, mình sẽ chia nó làm nhiều phần nhỏ tập trung vào một mục riêng biệt. Phần đầu của bài viết sẽ giới thiệu với các bạn về Github, một trang lưu trữ mã nguồn (source codes) quen thuộc của giới lập trình viên.
 
-**I. Tài khoản GitHub**
-
 Khi bạn mở một trang web bất kỳ, ví dụ như Google.com trên một trình duyệt như Chrome hoặc Firefox, trình duyệt sẽ tải nội dung từ máy chủ của Google. Bạn có thể tưởng tượng máy chủ giống như cửa hàng KFC, còn nội dung mà máy chủ cung cấp là những món combo gà rán mà KFC làm và bán cho bạn. Khi trình duyệt tải website từ máy chủ Google về và hiển thị trên máy tính bàn của bạn, nó tương tự như việc bạn gọi món từ KFC và tiêu thụ. 
 
 Thông thường mỗi cửa hàng KFC sẽ có một phòng để chứa thịt gà chưa chế biến và gia vị tẩm ướp. Những nguyên liệu thô để tạo 1 trang web cũng cần được lưu ở một nơi nào đó, và đó chính là lúc bạn cần đến GitHub để cất giữ mã nguồn website của mình. Điểm khác biệt giữa GitHub và các sản phẩm lưu trữ cá nhân như Google Drive là khả năng quản  lịch sử của tất cả các trang (documents) lưu trên GitHub. Nếu bạn vô tình xoá nhầm hoặc chỉnh sửa 1 file nào đó mà sau đó muốn phục hồi lại phiên bản gốc thì việc đó hoàn toàn đơn giản và dễ dàng.
