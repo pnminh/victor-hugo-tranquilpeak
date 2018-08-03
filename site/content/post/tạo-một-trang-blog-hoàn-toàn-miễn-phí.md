@@ -35,4 +35,7 @@ Từ trình duyệt của bạn, mở trang web với đường link https://git
 
 ![Fork a repository](/images/uploads/screen-shot-2018-08-03-at-4.21.37-pm.png)
 
-3. Kết nối tài khoản với máy tính cá nhân
+**3. Kết nối tài khoản với máy tính cá nhân**  
+
+Tuỳ vào hệ điều hành mà bạn sử dụng mà cách thiết lập giao tiếp với GitHub sẽ có một chút khác biệt. Mình sẽ hướng dẫn cách cài đặt cho 2 hệ điều hành phổ biến là Windows và Mac.
+ 
