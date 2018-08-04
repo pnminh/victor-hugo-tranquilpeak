@@ -18,4 +18,6 @@ We have just been onboard with Python recently as our requirements with using AW
 
 My first interaction with Python dated back to the time when I still worked at Cerner. We used an implementation of Python 2 called Jython to automate our process of configuring and deploying artifacts on IBM WebSphere App Server. Since we wrote Python as scripts, I used to see it as a procedure language and not until a year back when I helped one of my friends with her Python homework, I came to know Python also fully supported object oriented paradigm.
 
-I started refreshing my mind with some basic Python programming by looking at some resources online, and luckily found a website called SoloLearn that provides lessons in interactive mode. I highly recommend this website for beginners
+I started refreshing my mind with some basic Python programming by looking at some resources online, and luckily found a website called SoloLearn that provides lessons in interactive mode. I highly recommend this website for anyone who wants to start a journey with Python. The website even provided me with a certificate to celebrate my "accomplishment".
+
+![my python certificate](/images/uploads/cert-1073-10113884.jpg)
