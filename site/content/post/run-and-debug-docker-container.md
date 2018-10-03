@@ -2,7 +2,7 @@
 title: Run and debug Docker container
 thumbnailImage: /images/uploads/screen-shot-2018-10-03-at-9.04.02-am.png
 thumbnailImagePosition: left
-coverImage: /images/uploads/screen-shot-2018-10-03-at-9.04.02-am.png
+coverImage: ''
 metaAlignment: center
 coverMeta: out
 date: '2018-10-03T08:52:42-05:00'
@@ -59,3 +59,18 @@ First we need to create a run configuration to run docker container. Here is the
 
 {{< /codeblock >}}
 
+Here I name both the configuration and the container "main_app" which is the same with the spring app itself just to distinguish them easily. Some other important information is the image name which is "tomcat:7" in this case, the command line options that include some custom docker options such as volume mappings (in this scenario I mapped several static apps to the tomcat webapps folder on the container side, as well as the main_app and a config folder), some port mappings from the container to the host ( e.g. 8080 for the http communication and 8010 as remote listener port for debugging purpose). To do a remote debug later, I also needed to add an environment variable JAVA_TOOL_OPTIONS so that we can bind the debugger to the port 8010 on Tomcat server.
+
+As you can see, we can also hook some commands before launching the container in Intellij, and I think this is a killer feature. In the example above, I added a gradle build command to build the main app before have it served by Docker tomcat. We can even have our static content to be built with npm or angular cli as well.
+
+And if you want to look at the run configuration visually, here is a real config I put in for one of the apps:
+
+![](/images/uploads/screen-shot-2018-10-03-at-10.00.31-am.png)
+
+Next up, start the container and have it ready for debugging. That would, unfortunately, require us to create a debug configuration. There may be a way to make a single run config for docker run and debug, but I haven't dug into that yet. I think one option may be a after launch hook similar to the before launch one I mentioned above that can allow us to add the debug command.
+
+So here is the remote debug config:
+
+![](/images/uploads/screen-shot-2018-10-03-at-10.07.28-am.png)
+
+Or as a xml format:
