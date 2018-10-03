@@ -18,13 +18,13 @@ First we need to create a run configuration to run docker container. Here is the
 
 {{< codeblock "grapeConfig.xml" "html">}}
 
-<configuration name="customer" type="docker-deploy" factoryName="docker-image" server-name="Docker">
+<configuration name="main_app" type="docker-deploy" factoryName="docker-image" server-name="Docker">
       <deployment type="docker-image">
         <settings>
           <option name="JSONFilePath" value="" />
           <option name="command" value="" />
-          <option name="commandLineOptions" value="-v $PROJECT_DIR$/../batch/customer_assets/dist:/usr/local/tomcat/webapps/customer_assets/dist -v $PROJECT_DIR$/../batch/customer_assets/lib:/usr/local/tomcat/webapps/customer_assets/lib -v $PROJECT_DIR$/../batch/customer-apps/dist:/usr/local/tomcat/webapps/customer-apps/dist -v $PROJECT_DIR$/../batch/customer-apps/lib:/usr/local/tomcat/webapps/customer-apps/lib -v $PROJECT_DIR$/../batch/customer_conf:/usr/local/customer/conf -v $PROJECT_DIR$/../batch/customer/build/libs:/usr/local/tomcat/webapps" />
-          <option name="containerName" value="customer" />
+          <option name="commandLineOptions" value="-v $PROJECT_DIR$/../apps/static_assets/dist:/usr/local/tomcat/webapps/static_assets/dist -v $PROJECT_DIR$/../apps/static_assets/lib:/usr/local/tomcat/webapps/static_assets/lib -v $PROJECT_DIR$/../apps/app_conf:/usr/local/main_app/conf -v $PROJECT_DIR$/../apps/main_app/build/libs:/usr/local/tomcat/webapps" />
+          <option name="containerName" value="main_app" />
           <option name="entrypoint" value="" />
           <option name="envVars">
             <list>
@@ -53,8 +53,9 @@ First we need to create a run configuration to run docker container. Here is the
         </settings>
       </deployment>
       <method v="2">
-        <option name="Gradle.BeforeRunTask" enabled="true" tasks="build" externalProjectPath="$PROJECT_DIR$/../batch/customer" vmOptions="" scriptParameters="" />
+        <option name="Gradle.BeforeRunTask" enabled="true" tasks="build" externalProjectPath="$PROJECT_DIR$/../apps/main_app" vmOptions="" scriptParameters="" />
       </method>
     </configuration>
 
 {{< /codeblock >}}
+
