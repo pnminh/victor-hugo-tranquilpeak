@@ -16,6 +16,8 @@ Recently I talked to a colleague to see how he setup his IntelliJ workspace to r
 
 First we need to create a run configuration to run docker container. Here is the one I used to run my Spring Application with Tomcat:
 
+{{< codeblock "grapeConfig.xml" "html">}}
+
 <configuration name="customer" type="docker-deploy" factoryName="docker-image" server-name="Docker">
 
 \    <deployment type="docker-image">
@@ -91,3 +93,5 @@ First we need to create a run configuration to run docker container. Here is the
 \    </method>
 
 \    </configuration>
+
+{{< /codeblock >}}
