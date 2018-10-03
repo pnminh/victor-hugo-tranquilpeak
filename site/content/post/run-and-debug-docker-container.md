@@ -16,7 +16,7 @@ Recently I talked to a colleague to see how he setup his IntelliJ workspace to r
 
 First we need to create a run configuration to run docker container. Here is the one I used to run my Spring Application with Tomcat:
 
-{{< codeblock "grapeConfig.xml" "html">}}
+{{< codeblock "main_app.xml" "html">}}
 
 <configuration name="main_app" type="docker-deploy" factoryName="docker-image" server-name="Docker">
       <deployment type="docker-image">
@@ -74,3 +74,18 @@ So here is the remote debug config:
 ![](/images/uploads/screen-shot-2018-10-03-at-10.07.28-am.png)
 
 Or as a xml format:
+{{< codeblock "debug_main_app.xml" "html">}}
+<configuration name="debug_main_app" type="Remote" factoryName="Remote">
+      <module name="main_app" />
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="8010" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="8010" />
+        <option name="LOCAL" value="false" />
+      </RunnerSettings>
+      <method v="2" />
+    </configuration>
+{{< /codeblock >}}
