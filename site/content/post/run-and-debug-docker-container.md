@@ -65,13 +65,13 @@ As you can see, we can also hook some commands before launching the container in
 
 And if you want to look at the run configuration visually, here is a real config I put in for one of the apps:
 
-![](/images/uploads/screen-shot-2018-10-03-at-10.00.31-am.png)
+![null](/images/uploads/screen-shot-2018-10-03-at-10.00.31-am.png)
 
 Next up, start the container and have it ready for debugging. That would, unfortunately, require us to create a debug configuration. There may be a way to make a single run config for docker run and debug, but I haven't dug into that yet. I think one option may be a after launch hook similar to the before launch one I mentioned above that can allow us to add the debug command.
 
 So here is the remote debug config:
 
-![](/images/uploads/screen-shot-2018-10-03-at-10.07.28-am.png)
+![null](/images/uploads/screen-shot-2018-10-03-at-10.07.28-am.png)
 
 Or as a xml format:
 {{< codeblock "debug_main_app.xml" "html">}}
@@ -89,3 +89,9 @@ Or as a xml format:
       <method v="2" />
     </configuration>
 {{< /codeblock >}}
+
+Pay attention to the port that we use to bind the debugger to, which in this case is 8010. This should match the one set in the docker container config.
+
+That's it. Now you can start the debugger and fix your ugly bugs.
+
+Happy coding.
