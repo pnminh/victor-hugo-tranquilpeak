@@ -91,6 +91,13 @@ enableEmoji = true
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-linkedin\"></i>"
   url = "https://www.linkedin.com/in/minhpham0223/"
 
+[[menu.links]]
+  weight = 1
+  identifier = "email"
+  name = "email"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-envelope-o\"></i>"
+  url = "mailto:pnminh232@gmail.com"
+
 [params]
   # Customize date format use to render blog post date, categories and other
   # You must use date format used by Go Time package https://golang.org/pkg/time/
