@@ -32,7 +32,7 @@ enableEmoji = true
 
 [author]
   name = "Minh Pham"
-  bio = "A typical software developer who loves working with new stuff **COOL**"
+  bio = "A typical software developer who loves working with new stuff"
   job = "Software Engineer"
   location = "USA"
   # Your Gravatar email. Overwrite `author.picture` everywhere in the blog
