@@ -94,7 +94,7 @@ enableEmoji = true
 [[menu.links]]
   weight = 1
   identifier = "email"
-  name = "email"
+  name = "Email"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-envelope-o\"></i>"
   url = "mailto:pnminh232@gmail.com"
 
